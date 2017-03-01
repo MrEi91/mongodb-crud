@@ -1,9 +1,10 @@
-var express = require('express');
-var router = express.Router();
+'use strict'
+
+var express = require('express')
+var router = express.Router()
+const controllers = require('../controllers/bookController.js')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.get('/', controllers.seedBooks)
 
-module.exports = router;
+module.exports = router

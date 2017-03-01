@@ -8,7 +8,7 @@ let bookSchema = Schema({
   'title': String,
   'author': String,
   'category': String,
-  'Stock': Number
+  'stock': Number
 })
 
 let book = mongoose.model('book', bookSchema)
